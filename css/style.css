@@ -1,3 +1,135 @@
+/* Header section */
+
+/* Bottom left */
+.bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+}
+
+/* Top left */
+.top-left {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+}
+
+/* Top right */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right */
+.bottom-right {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+}
+
+/* Header image and images inside*/
+
+/* Mobile size */
+.header-image {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Medium container */
+@media only screen and (min-width: 768px) {
+    .header-image {
+        height: 400px;
+    }
+
+    .bottom-left img {
+        width: 115px
+    }
+
+    .top-left img {
+        width: 78px;
+    }
+
+    .top-right img {
+        width: 135px;
+    }
+
+    .bottom-right img {
+        width: 91px;
+    }
+}
+
+/* Larder container */
+@media only screen and (min-width: 992px) {
+    .header-image {
+        height: 600px;
+    }
+
+    .bottom-left img {
+        width: 148px
+    }
+
+    .top-left img {
+        width: 101px;
+    }
+
+    .top-right img {
+        width: 174px;
+    }
+
+    .bottom-right img {
+        width: 118px;
+    }
+}
+
+/* X large container */
+@media only screen and (min-width: 1200px) {
+    .bottom-left img {
+        width: 179px
+    }
+
+    .top-left img {
+        width: 123px;
+    }
+
+    .top-right img {
+        width: 210px;
+    }
+
+    .bottom-right img {
+        width: 143px;
+    }
+}
+
+/* XX large container */
+@media only screen and (min-width: 1400px) {
+    .bottom-left img {
+        width: 209px;
+    }
+
+    .top-left img {
+        width: 143px;
+    }
+
+    .top-right img {
+        width: 245px;
+    }
+
+    .bottom-right img {
+        width: 167px;
+    }
+}
+
+/* Webmain images */
+.main-image-size {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
 /* Footer */
 .m-3 {
     margin-right: 3px !important;
@@ -15,4 +147,4 @@ a:link {
 a:hover {
     text-decoration: underline;
     color: black;
-} 
+}
