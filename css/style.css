@@ -11,7 +11,7 @@
 .top-left {
     position: absolute;
     top: 40px;
-    left: 300px;
+    /* left: 300px; */
 }
 
 /* Top right */
@@ -49,6 +49,10 @@
         width: 115px
     }
 
+    .top-left {
+        left: 200px;
+    }
+
     .top-left img {
         width: 78px;
     }
@@ -70,6 +74,10 @@
 
     .bottom-left img {
         width: 148px
+    }
+
+    .top-left {
+        left: 300px;
     }
 
     .top-left img {
