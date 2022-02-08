@@ -138,6 +138,12 @@
     object-fit: cover;
 }
 
+.main-artist-portrait-size {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+}
+
 /* Footer */
 .m-3 {
     margin-right: 3px !important;
