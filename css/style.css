@@ -1,4 +1,5 @@
 /* Header section */
+/* Images inside header image */
 
 /* Bottom left */
 .bottom-left {
@@ -11,7 +12,6 @@
 .top-left {
     position: absolute;
     top: 40px;
-    /* left: 300px; */
 }
 
 /* Top right */
@@ -28,23 +28,40 @@
     right: 50px;
 }
 
-/* Header image and images inside*/
+/* Mobile container styling */
+@media only screen and (min-width: 1px) {
+    .header-image {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
 
-/* Mobile size */
-.header-image {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* Mobile container */
-/* Ended off hea */
-@media only screen and (max-width: 575px) {
     .main-artist-portrait-size {
         width: 300px;
         height: 350px;
+        object-fit: cover;
+    }
+
+    .main-artist-img-2 {
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .main-artist-img-5 {
+        width: 300px;
+        height: 450px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .main-artist-portrait-size {
+        width: 400px;
+        height: 300px;
         object-fit: cover;
     }
 }
@@ -74,9 +91,14 @@
     .bottom-right img {
         width: 91px;
     }
+
+    .main-artist-portrait-size {
+        width: 400px;
+        height: 450px;
+    }
 }
 
-/* Larder container */
+/* Large container */
 @media only screen and (min-width: 992px) {
     .header-image {
         height: 600px;
@@ -100,6 +122,14 @@
 
     .bottom-right img {
         width: 118px;
+    }
+
+    .main-artist-img-2 {
+        margin-top: -3em;
+    }
+
+    .main-artist-img-5 {
+        margin-top: -9em;
     }
 }
 
@@ -141,16 +171,10 @@
     }
 }
 
-/* Webmain images */
+/* Main section */
 .main-image-size {
     width: 300px;
     height: 350px;
-    object-fit: cover;
-}
-
-.main-artist-portrait-size {
-    width: 400px;
-    height: 450px;
     object-fit: cover;
 }
 
@@ -158,18 +182,28 @@
     width: 300px;
     height: 350px;
     object-fit: cover;
-}
-
-.main-artist-img-2 {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
+    object-position: top;
 }
 
 .main-artist-img-3 {
     width: 300px;
     height: 400px;
     object-fit: cover;
+    object-position: top;
+}
+
+.main-artist-img-4 {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.main-artist-img-6 {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* Footer */
