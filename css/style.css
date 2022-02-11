@@ -250,6 +250,13 @@
     object-position: top;
 }
 
+.main-artist-work-img {
+    width: 500px;
+    height: 650px;
+    object-fit: cover;
+    object-position: top;
+}
+
 /* Footer */
 .m-3 {
     margin-right: 3px !important;
