@@ -83,11 +83,11 @@
         padding: 0;
     }
 
-    /* .main-artist-portrait-size {
+    .main-artist-portrait-size {
         width: 300px;
         height: 350px;
         object-fit: cover;
-    } */
+    }
 
     .main-artist-img-2 {
         width: 300px;
