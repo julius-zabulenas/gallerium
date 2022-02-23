@@ -283,3 +283,15 @@ a:hover {
     text-decoration: underline;
     color: black;
 }
+/* Newsletter subscribe button stylisation
+#modal-sub-button-config .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-color: rgb(75, 75, 75) !important;
+    color: white;
+    border-color: rgb(75, 75, 75) !important;
+}
+/* Newsletter close button stylisation
+#modal-close-button-config .btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited{
+    background-color: rgb(161, 161, 161) !important;
+    color: white;
+    border-color: rgb(161, 161, 161);
+} */
