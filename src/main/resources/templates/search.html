@@ -39,9 +39,9 @@
 						</ul>
 
 						<form class="d-flex" action="/search">
-                            <input type="text" class="form-control" placeholder="Search" name="keyword">
-                            <button class="btn btn-primary" type="submit">Search</button>
-                        </form>
+							<input type="text" class="form-control" placeholder="Search" name="keyword">
+							<button class="btn btn-primary" type="submit">Search</button>
+						</form>
 					</div>
 				</div>
 			</nav>
@@ -72,20 +72,29 @@
 		</header>
 
 		<main>
-			<table class="table table-bordered table-sm mt-2">
-				<thead>
-					<tr>
-						<th>Id</th>
-						<th>Artist</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr th:each="l : ${list}" th:field="${l}">
-						<td th:text="${lStat.index+1}"></td>
-						<td th:text="${l.name}"></td>
-					</tr>
-				</tbody>
+			<table class="row table">
+				<div class="col">
+					<thead>
+						<tr>
+							<th>Artist</th>
+							<th>Link</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr th:each="l : ${list}" th:field="${l}">
+							<td th:text="${l.name}"></td>
+							<td th:href="${l.link}"><a th:href="${l.link}">Read more...</a></td>
+						</tr>
+					</tbody>
+				</div>
 			</table>
+
+			<!-- 			<div class="row"> -->
+			<!-- 				<div class="col"> -->
+			<!-- 					<p th:text="${list.name}"></p> -->
+			<!-- 				</div> -->
+			<!-- 			</div> -->
 		</main>
 	</div>
 </body>

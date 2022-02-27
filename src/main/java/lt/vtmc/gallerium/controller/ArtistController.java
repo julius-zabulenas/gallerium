@@ -26,11 +26,5 @@ public class ArtistController {
 		} else {
 			return "searchEmptyError";
 		}
-//		else {
-//			List<Artist> list = artistService.getAllArtists();
-//			model.addAttribute("list", list);
-//		}
-
-//		return "search";
 	}
 }

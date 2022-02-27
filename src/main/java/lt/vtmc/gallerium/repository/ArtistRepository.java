@@ -10,7 +10,7 @@ import lt.vtmc.gallerium.model.Artist;
 
 public interface ArtistRepository extends JpaRepository<Artist, Integer> {
 
-	@Query(value = "SELECT * FROM artists WHERE Name LIKE %:keyword%", nativeQuery = true)
+	@Query(value = "SELECT * FROM artists WHERE name LIKE %:keyword%", nativeQuery = true)
 	
 	List<Artist> findByKeyword(@Param("keyword") String keyword);
 }
