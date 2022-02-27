@@ -15,17 +15,22 @@ public class ArtistController {
 
 	@Autowired
 	private ArtistService artistService;
-	
-	@RequestMapping(path = {"/search"})
-	public String home(Artist artist, Model model, String keyword) {
-		if (keyword != null) {
+
+	@RequestMapping(path = { "/search" })
+	public String home(Model model, String keyword) {
+		if (keyword != "") {
 			List<Artist> list = artistService.getByKeyword(keyword);
 			model.addAttribute("list", list);
+			
+			return "search";
 		} else {
-			List<Artist> list = artistService.getAllArtists();
-			model.addAttribute("list", list);
+			return "searchEmptyError";
 		}
-		
-		return "search";
+//		else {
+//			List<Artist> list = artistService.getAllArtists();
+//			model.addAttribute("list", list);
+//		}
+
+//		return "search";
 	}
 }
