@@ -72,29 +72,30 @@
 		</header>
 
 		<main>
-			<table class="row table">
-				<div class="col">
-					<thead>
-						<tr>
-							<th>Artist</th>
-							<th>Link</th>
-						</tr>
-					</thead>
+			<!-- 			<table class="table"> -->
+			<!-- 					<thead> -->
+			<!-- 						<tr> -->
+			<!-- 							<th>Artist</th> -->
+			<!-- 							<th>Link</th> -->
+			<!-- 						</tr> -->
+			<!-- 					</thead> -->
 
-					<tbody>
-						<tr th:each="l : ${list}" th:field="${l}">
-							<td th:text="${l.name}"></td>
-							<td th:href="${l.link}"><a th:href="${l.link}">Read more...</a></td>
-						</tr>
-					</tbody>
-				</div>
-			</table>
+			<!-- 					<tbody> -->
+			<!-- 						<tr th:each="l : ${list}" th:field="${l}"> -->
+			<!-- 							<td th:text="${l.name}"></td> -->
+			<!-- 							<td th:href="${l.link}"><a th:href="${l.link}">Read more...</a></td> -->
+			<!-- 						</tr> -->
+			<!-- 					</tbody> -->
+			<!-- 			</table> -->
 
-			<!-- 			<div class="row"> -->
-			<!-- 				<div class="col"> -->
-			<!-- 					<p th:text="${list.name}"></p> -->
-			<!-- 				</div> -->
-			<!-- 			</div> -->
+			<div class="row">
+				<section th:each="l : ${list}" class="col col-sm-4 text-center">
+					<div><img th:src="${l.portrait}" alt="" style="width: 200px; height: 200px; object-fit: cover;"></div>
+					<div th:text="${l.name}"></div>
+					<div class="mb-2"><a th:href="${l.link}">Read more...</a></div>
+				</section>
+			</div>
+			<!-- Make it proper with image caption of boostrap, that is, yeah -->
 		</main>
 	</div>
 </body>
