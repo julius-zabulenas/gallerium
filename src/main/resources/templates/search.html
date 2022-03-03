@@ -72,22 +72,6 @@
 		</header>
 
 		<main>
-			<!-- 			<table class="table"> -->
-			<!-- 					<thead> -->
-			<!-- 						<tr> -->
-			<!-- 							<th>Artist</th> -->
-			<!-- 							<th>Link</th> -->
-			<!-- 						</tr> -->
-			<!-- 					</thead> -->
-
-			<!-- 					<tbody> -->
-			<!-- 						<tr th:each="l : ${list}" th:field="${l}"> -->
-			<!-- 							<td th:text="${l.name}"></td> -->
-			<!-- 							<td th:href="${l.link}"><a th:href="${l.link}">Read more...</a></td> -->
-			<!-- 						</tr> -->
-			<!-- 					</tbody> -->
-			<!-- 			</table> -->
-
 			<div class="row">
 				<section th:each="l : ${list}" class="col col-sm-4 text-center">
 					<div><img th:src="${l.portrait}" alt="" style="width: 200px; height: 200px; object-fit: cover;"></div>

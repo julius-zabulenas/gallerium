@@ -11,16 +11,13 @@ import lt.vtmc.gallerium.repository.ArtistRepository;
 @Service
 public class ArtistService {
 
-	@Autowired
 	private ArtistRepository artistRepository;
 
-//	Get the list of shops
-	public List<Artist> getAllArtists() {
-		List<Artist> list = (List<Artist>) artistRepository.findAll();
-		
-		return list;
+	@Autowired
+	public ArtistService(ArtistRepository artistRepository) {
+		this.artistRepository = artistRepository;
 	}
-	
+
 //	Get artist by keyword
 	public List<Artist> getByKeyword(String keyword) {
 		return artistRepository.findByKeyword(keyword);
