@@ -1,2 +1,2 @@
-# Gallerium
-Elektroninės galerijos Gallerium implementacija
+#Gallerium
+Gallerium
