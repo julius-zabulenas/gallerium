@@ -15,8 +15,13 @@
     <title>Elektroninė galerija Gallerium</title>
 </head>
 
+<!--------------------------------- Body --------------------------------->
+
 <body class="bg-dark bg-opacity-25">
     <div class="container">
+
+        <!--------------------------------- Header --------------------------------->
+
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="container">
@@ -34,7 +39,18 @@
                                 <a href="#" class="nav-link">Bendruomenė</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Kontaktai</a>
+                                <a href="contacts.html" class="nav-link">Kontaktai</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Žanrai
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                        <a href="Paintings.html">Paintings</a>
+                                        <a href="Sculptures.html">Sculptures</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
 
@@ -71,6 +87,8 @@
             </div>
         </header>
 
+        <!--------------------------------- Main --------------------------------->
+
         <main>
             <div class="row mb-2 mb-md-5">
                 <aside class="col-12 col-lg-6 text-center text-lg-start">
@@ -82,11 +100,25 @@
                 <article class="col-12 col-lg-6">
                     <h2>Giovanni Bellini</h2>
 
-                        <p><b>Bellini was one of the most influential Venetian artists. He lived and worked in Venice all his life; his career spanned 65 years. He is celebrated for his pioneering portrayal of natural light, seen in such works as 'The Agony in the Garden', for his tender and graceful pictures of the Virgin and for his altarpieces. Dürer wrote that Giovanni 'is very old and yet he is the best painter of all'.</p>
+                    <p><b>Bellini was one of the most influential Venetian artists. He lived and worked in Venice all
+                            his life; his career spanned 65 years. He is celebrated for his pioneering portrayal of
+                            natural light, seen in such works as 'The Agony in the Garden', for his tender and graceful
+                            pictures of the Virgin and for his altarpieces. Dürer wrote that Giovanni 'is very old and
+                            yet he is the best painter of all'.</p>
 
-                        <p>Giovanni Bellini was born in the leading dynasty of Venetian painters, Venice, Italy. He seems to have been the younger brother of Gentile Bellini. His development was first shaped by his father, Jacopo. His brother-in-law Andrea Mantegna also influenced early works, such as 'The Blood of the Redeemer' and 'The Agony in the Garden'. The visit of Antonello da Messina to Venice in 1475-6 may also have influenced him.</p>
-                        
-                        <p>In 1470 Giovanni received his first appointment to work along with his elder brother, Gentile, and other artists in the Scuola di San Marco, where among other subjects he was commissioned to paint a Deluge with Noah's Ark. None of the master's works of this kind, whether painted for the various schools or confraternities or for the ducal palace, has survived. But some of the signed paintings have survived throughout many centuries. In his old age Bellini executed a few secular narrative paintings, of which the greatest is 'The Feast of the Gods', later modified by Titian.</p>
+                    <p>Giovanni Bellini was born in the leading dynasty of Venetian painters, Venice, Italy. He seems to
+                        have been the younger brother of Gentile Bellini. His development was first shaped by his
+                        father, Jacopo. His brother-in-law Andrea Mantegna also influenced early works, such as 'The
+                        Blood of the Redeemer' and 'The Agony in the Garden'. The visit of Antonello da Messina to
+                        Venice in 1475-6 may also have influenced him.</p>
+
+                    <p>In 1470 Giovanni received his first appointment to work along with his elder brother, Gentile,
+                        and other artists in the Scuola di San Marco, where among other subjects he was commissioned to
+                        paint a Deluge with Noah's Ark. None of the master's works of this kind, whether painted for the
+                        various schools or confraternities or for the ducal palace, has survived. But some of the signed
+                        paintings have survived throughout many centuries. In his old age Bellini executed a few secular
+                        narrative paintings, of which the greatest is 'The Feast of the Gods', later modified by Titian.
+                    </p>
 
                 </article>
             </div>
@@ -187,6 +219,8 @@
 
         </main>
 
+        <!--------------------------------- Footer --------------------------------->
+
         <footer>
             <hr>
             <ul style="list-style: none; padding: 0;">
@@ -217,6 +251,9 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     </div>
+
+    <script src="javascript/main.js"></script>
+
 </body>
 
 </html>

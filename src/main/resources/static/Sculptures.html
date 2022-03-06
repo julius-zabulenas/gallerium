@@ -15,8 +15,13 @@
     <title>Elektroninė galerija Gallerium</title>
 </head>
 
+<!--------------------------------- Body --------------------------------->
+
 <body class="bg-dark bg-opacity-25">
     <div class="container">
+
+        <!--------------------------------- Header --------------------------------->
+
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="container">
@@ -34,7 +39,7 @@
                                 <a href="#" class="nav-link">Bendruomenė</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Kontaktai</a>
+                                <a href="contacts.html" class="nav-link">Kontaktai</a>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
@@ -47,9 +52,6 @@
                                     </div>
                                 </div>
                             </li>
-
-
-
                         </ul>
 
                         <form class="d-flex">
@@ -85,6 +87,8 @@
             </div>
         </header>
 
+        <!--------------------------------- Main --------------------------------->
+
         <main>
             <div class="row mt-3">
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -109,6 +113,8 @@
             </div>
 
         </main>
+
+        <!--------------------------------- Footer --------------------------------->
 
         <footer>
             <hr>
@@ -141,20 +147,7 @@
             crossorigin="anonymous"></script>
     </div>
 
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function (e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
-                }
-            }
-        }
-    </script>
+    <script src="javascript/main.js"></script>
 
 </body>
 
