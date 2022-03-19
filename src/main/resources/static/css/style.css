@@ -304,7 +304,7 @@ a:hover {
     border: none;
     outline: none;
     color: rgb(172, 172, 172);
-    padding: 14px 16px;
+    padding: 14px 12px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -338,6 +338,14 @@ a:hover {
 .show {
     display: block;
   }
+
+/* Navbar */
+
+.nav-link {
+    font-size: 16px; 
+    padding: 14px 16px; 
+    margin: 0;
+}
 
 /* Button scroll back to top styling below */
 /* #button-to-top {

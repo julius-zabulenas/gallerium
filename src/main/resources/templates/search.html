@@ -28,13 +28,24 @@
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
-								<a href="#" class="nav-link">Mėgstamiausi</a>
+								<a href="index.html" class="nav-link">Mėgstamiausi</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">Bendruomenė</a>
+								<a href="index.html" class="nav-link">Bendruomenė</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">Kontaktai</a>
+								<a href="contacts.html" class="nav-link">Kontaktai</a>
+							</li>
+							<li class="nav-item">
+								<div class="dropdown">
+									<button class="dropbtn" onclick="myFunction()">Žanrai
+										<i class="fa fa-caret-down"></i>
+									</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="../static/Paintings.html">Paintings</a>
+										<a href="../static/Sculptures.html">Sculptures</a>
+									</div>
+								</div>
 							</li>
 						</ul>
 
@@ -74,7 +85,8 @@
 		<main>
 			<div class="row">
 				<section th:each="l : ${list}" class="col col-sm-4 text-center">
-					<div><img th:src="${l.portrait}" alt="" style="width: 200px; height: 200px; object-fit: cover;"></div>
+					<div><img th:src="${l.portrait}" alt="" style="width: 200px; height: 200px; object-fit: cover;">
+					</div>
 					<div th:text="${l.name}"></div>
 					<div class="mb-2"><a th:href="${l.link}">Read more...</a></div>
 				</section>
@@ -82,6 +94,9 @@
 			<!-- Make it proper with image caption of boostrap, that is, yeah -->
 		</main>
 	</div>
+
+	<script src="javascript/main.js"></script>
+
 </body>
 
 </html>
