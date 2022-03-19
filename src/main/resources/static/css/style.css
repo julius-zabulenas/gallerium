@@ -307,7 +307,7 @@ a:hover {
     border: none;
     outline: none;
     color: rgb(172, 172, 172);
-    padding: 14px 16px;
+    padding: 14px 12px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -341,6 +341,23 @@ a:hover {
 .show {
     display: block;
   }
+
+
+.nav-link {
+    font-size: 16px; 
+    padding: 14px 16px; 
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
