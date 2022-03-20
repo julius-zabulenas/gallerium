@@ -11,6 +11,21 @@ window.onclick = function (e) {
     }
 }
 
+// Button night and day functionality
+let body = document.querySelector("body");
+let buttonNight = document.getElementById("button-night");
+let buttonDay = document.getElementById("button-day");
+
+function makeDark() {
+    body.className = "bg-dark bg-opacity-75";
+}
+buttonNight.addEventListener("click", makeDark);
+
+function makeLight() {
+    body.className = "bg-dark bg-opacity-25";
+}
+buttonDay.addEventListener("click", makeLight);
+
 // Button scroll back to top functionality below
 let buttonToTop = document.querySelector(".bi-arrow-up-circle-fill");
 
