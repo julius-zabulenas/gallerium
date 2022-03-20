@@ -26,10 +26,18 @@ function makeLight() {
 }
 buttonDay.addEventListener("click", makeLight);
 
+// Button scroll back to top functionality below
+let buttonToTop = document.querySelector(".bi-arrow-up-circle-fill");
 
+window.onscroll = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        buttonToTop.style.display = "block";
+    } else {
+        buttonToTop.style.display = "none";
+    }
+}
 
-
-
-
-
-
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
