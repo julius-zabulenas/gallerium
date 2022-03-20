@@ -11,19 +11,20 @@ window.onclick = function (e) {
     }
 }
 
-let body = document.getElementsByTagName("body");
-let buttonNight = document.getElementById("#buttonNight");
-let buttonDay = document.getElementById("#buttonDay");
+// Button night and day functionality
+let body = document.querySelector("body");
+let buttonNight = document.getElementById("button-night");
+let buttonDay = document.getElementById("button-day");
 
 function makeDark() {
-    body.classList.remove("bg-opacity-25");
+    body.className = "bg-dark bg-opacity-75";
 }
-buttonNight.addEventListener("click", makeDark());
+buttonNight.addEventListener("click", makeDark);
 
 function makeLight() {
-    body.classList.add("bg-opacity-25");
+    body.className = "bg-dark bg-opacity-25";
 }
-buttonDay.addEventListener("click", makeLight());
+buttonDay.addEventListener("click", makeLight);
 
 
 
